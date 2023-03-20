@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/JetEazy/react-matis-dashboard/static/css/main.e1f2bb6b.css",
-    "main.js": "/JetEazy/react-matis-dashboard/static/js/main.1d615d35.js",
-    "static/js/243.ed08be0c.chunk.js": "/JetEazy/react-matis-dashboard/static/js/243.ed08be0c.chunk.js",
-    "static/js/180.f6d9c5cb.chunk.js": "/JetEazy/react-matis-dashboard/static/js/180.f6d9c5cb.chunk.js",
-    "static/js/357.7d67ef88.chunk.js": "/JetEazy/react-matis-dashboard/static/js/357.7d67ef88.chunk.js",
-    "static/js/525.c227ce72.chunk.js": "/JetEazy/react-matis-dashboard/static/js/525.c227ce72.chunk.js",
-    "static/js/893.70b0ae8c.chunk.js": "/JetEazy/react-matis-dashboard/static/js/893.70b0ae8c.chunk.js",
-    "static/js/165.1ba1f42f.chunk.js": "/JetEazy/react-matis-dashboard/static/js/165.1ba1f42f.chunk.js",
-    "static/js/346.ad045b3a.chunk.js": "/JetEazy/react-matis-dashboard/static/js/346.ad045b3a.chunk.js",
-    "static/js/819.2b7cecbe.chunk.js": "/JetEazy/react-matis-dashboard/static/js/819.2b7cecbe.chunk.js",
-    "static/js/522.31f29cfa.chunk.js": "/JetEazy/react-matis-dashboard/static/js/522.31f29cfa.chunk.js",
-    "static/js/260.078116c5.chunk.js": "/JetEazy/react-matis-dashboard/static/js/260.078116c5.chunk.js",
-    "static/js/252.f54df802.chunk.js": "/JetEazy/react-matis-dashboard/static/js/252.f54df802.chunk.js",
-    "static/js/120.d62cdc6d.chunk.js": "/JetEazy/react-matis-dashboard/static/js/120.d62cdc6d.chunk.js",
-    "static/js/634.7ade2a75.chunk.js": "/JetEazy/react-matis-dashboard/static/js/634.7ade2a75.chunk.js",
-    "index.html": "/JetEazy/react-matis-dashboard/index.html",
-    "static/media/google.svg": "/JetEazy/react-matis-dashboard/static/media/google.a025da87054139fc16b3b9b7ed0a2724.svg",
-    "static/media/twitter.svg": "/JetEazy/react-matis-dashboard/static/media/twitter.3e49f64208e00f377e9c3dbeaed797ce.svg",
-    "static/media/facebook.svg": "/JetEazy/react-matis-dashboard/static/media/facebook.eb4c069b746811e7b3a7ddf099989a69.svg"
+    "main.css": "/react-matis-dashboard/static/css/main.e1f2bb6b.css",
+    "main.js": "/react-matis-dashboard/static/js/main.027db23e.js",
+    "static/js/243.ed08be0c.chunk.js": "/react-matis-dashboard/static/js/243.ed08be0c.chunk.js",
+    "static/js/180.f6d9c5cb.chunk.js": "/react-matis-dashboard/static/js/180.f6d9c5cb.chunk.js",
+    "static/js/357.7d67ef88.chunk.js": "/react-matis-dashboard/static/js/357.7d67ef88.chunk.js",
+    "static/js/525.c227ce72.chunk.js": "/react-matis-dashboard/static/js/525.c227ce72.chunk.js",
+    "static/js/893.70b0ae8c.chunk.js": "/react-matis-dashboard/static/js/893.70b0ae8c.chunk.js",
+    "static/js/165.1ba1f42f.chunk.js": "/react-matis-dashboard/static/js/165.1ba1f42f.chunk.js",
+    "static/js/346.ad045b3a.chunk.js": "/react-matis-dashboard/static/js/346.ad045b3a.chunk.js",
+    "static/js/819.2b7cecbe.chunk.js": "/react-matis-dashboard/static/js/819.2b7cecbe.chunk.js",
+    "static/js/522.31f29cfa.chunk.js": "/react-matis-dashboard/static/js/522.31f29cfa.chunk.js",
+    "static/js/260.078116c5.chunk.js": "/react-matis-dashboard/static/js/260.078116c5.chunk.js",
+    "static/js/252.f54df802.chunk.js": "/react-matis-dashboard/static/js/252.f54df802.chunk.js",
+    "static/js/120.d62cdc6d.chunk.js": "/react-matis-dashboard/static/js/120.d62cdc6d.chunk.js",
+    "static/js/634.7ade2a75.chunk.js": "/react-matis-dashboard/static/js/634.7ade2a75.chunk.js",
+    "index.html": "/react-matis-dashboard/index.html",
+    "static/media/google.svg": "/react-matis-dashboard/static/media/google.a025da87054139fc16b3b9b7ed0a2724.svg",
+    "static/media/twitter.svg": "/react-matis-dashboard/static/media/twitter.3e49f64208e00f377e9c3dbeaed797ce.svg",
+    "static/media/facebook.svg": "/react-matis-dashboard/static/media/facebook.eb4c069b746811e7b3a7ddf099989a69.svg"
   },
   "entrypoints": [
     "static/css/main.e1f2bb6b.css",
-    "static/js/main.1d615d35.js"
+    "static/js/main.027db23e.js"
   ]
 }

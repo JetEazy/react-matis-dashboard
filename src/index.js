@@ -23,7 +23,13 @@ const root = createRoot(container); // createRoot(container!) if you use TypeScr
 root.render(
     <StrictMode>
         <ReduxProvider store={store}>
-            <BrowserRouter basename="/free">
+            {/* 
+                因為在 package.json 指定了
+                    "homepage": "https://jeteazy.github.io/react-matis-dashboard",
+                所以 Router basename 必須要設定為 
+                    "/react-matis-dashboard"
+             */}
+            <BrowserRouter basename="/react-matis-dashboard">
                 <App />
             </BrowserRouter>
         </ReduxProvider>

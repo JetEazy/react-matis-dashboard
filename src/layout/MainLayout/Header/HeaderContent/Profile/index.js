@@ -26,7 +26,7 @@ import ProfileTab from './ProfileTab';
 import SettingTab from './SettingTab';
 
 // assets
-import avatar1 from 'assets/images/users/avatar-1.png';
+
 import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 
 // tab panel wrapper
@@ -50,6 +50,11 @@ function a11yProps(index) {
         'aria-controls': `profile-tabpanel-${index}`
     };
 }
+
+// ==============================|| userInfo ||============================== //
+import userAvatar from 'assets/images/users/avatar-letian.jpg';
+const userName = 'LeTian Chang';
+const userJobs = ['Software Engineer', 'UI/UX Designer (part-time)'];
 
 // ==============================|| HEADER CONTENT - PROFILE ||============================== //
 
@@ -97,8 +102,8 @@ const Profile = () => {
                 onClick={handleToggle}
             >
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ p: 0.5 }}>
-                    <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
-                    <Typography variant="subtitle1">John Doe</Typography>
+                    <Avatar alt="profile user" src={userAvatar} sx={{ width: 32, height: 32 }} />
+                    <Typography variant="subtitle1">{userName}</Typography>
                 </Stack>
             </ButtonBase>
             <Popper
@@ -139,12 +144,19 @@ const Profile = () => {
                                             <Grid container justifyContent="space-between" alignItems="center">
                                                 <Grid item>
                                                     <Stack direction="row" spacing={1.25} alignItems="center">
-                                                        <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
+                                                        <Avatar alt="profile user" src={userAvatar} sx={{ width: 32, height: 32 }} />
                                                         <Stack>
-                                                            <Typography variant="h6">John Doe</Typography>
+                                                            <Typography variant="h6">{userName}</Typography>
+                                                            {/* 
                                                             <Typography variant="body2" color="textSecondary">
-                                                                UI/UX Designer
-                                                            </Typography>
+                                                                UI/UX Engineer
+                                                            </Typography> 
+                                                            */}
+                                                            {userJobs.map((job) => (
+                                                                <Typography variant="body2" color="textSecondary" key={job}>
+                                                                    {job}
+                                                                </Typography>
+                                                            ))}
                                                         </Stack>
                                                     </Stack>
                                                 </Grid>

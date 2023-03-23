@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 // scroll bar
 import 'simplebar/src/simplebar.css';
@@ -26,12 +27,20 @@ root.render(
             {/* 
                 因為在 package.json 指定了
                     "homepage": "https://jeteazy.github.io/react-matis-dashboard",
-                所以 Router basename 必須要設定為 
-                    "/react-matis-dashboard"
+                (1) BrowserRouter basename 必須要設定為 
+                        basename = "/react-matis-dashboard"
+                (2) HashRouter 則不用!
              */}
-            <BrowserRouter basename="/react-matis-dashboard">
+
+            {/*  
+            <!-- <BrowserRouter basename = "/react-matis-dashboard">
                 <App />
             </BrowserRouter>
+            */}
+
+            <HashRouter>
+                <App />
+            </HashRouter>
         </ReduxProvider>
     </StrictMode>
 );

@@ -1,6 +1,6 @@
 // ==============================|| DEFAULT THEME - TYPOGRAPHY  ||============================== //
 
-const Typography = (fontFamily) => ({
+const MtTypography = (fontFamily) => ({
     htmlFontSize: 16,
     fontFamily,
     fontWeightLight: 300,
@@ -68,4 +68,4 @@ const Typography = (fontFamily) => ({
     }
 });
 
-export default Typography;
+export default MtTypography;

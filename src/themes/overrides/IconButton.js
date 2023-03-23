@@ -10,11 +10,15 @@ export default function IconButton(theme) {
                 sizeLarge: {
                     width: theme.spacing(5.5),
                     height: theme.spacing(5.5),
+                    // width: '1.25rem',
+                    // height: '1.25rem',
                     fontSize: '1.25rem'
                 },
                 sizeMedium: {
                     width: theme.spacing(4.5),
                     height: theme.spacing(4.5),
+                    // width: '1rem',
+                    // height: '1rem',
                     fontSize: '1rem'
                 },
                 sizeSmall: {

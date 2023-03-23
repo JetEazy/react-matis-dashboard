@@ -10,6 +10,7 @@ const store = configureStore({
     reducer: reducers
 });
 
+// 解構式: 相當於 dispatch = store.reducers
 const { dispatch } = store;
 
 export { store, dispatch };

@@ -1,7 +1,7 @@
 // material-ui
 import { createTheme } from '@mui/material/styles';
 
-// third-party
+// third-party 中國螞蟻
 import { presetPalettes } from '@ant-design/colors';
 
 // project import
@@ -9,7 +9,7 @@ import ThemeOption from './theme';
 
 // ==============================|| DEFAULT THEME - PALETTE  ||============================== //
 
-const Palette = (mode) => {
+const MtPalette = (mode) => {
     const colors = presetPalettes;
 
     const greyPrimary = [
@@ -57,4 +57,4 @@ const Palette = (mode) => {
     });
 };
 
-export default Palette;
+export default MtPalette;

@@ -6,19 +6,19 @@ import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 // project import
-import Palette from './palette';
-import Typography from './typography';
-import CustomShadows from './shadows';
+import MtPalette from './mt-palette';
+import MtTypography from './mt-typography';
+import MtCustomShadows from './mt-shadows';
 import componentsOverride from './overrides';
 
 // ==============================|| DEFAULT THEME - MAIN  ||============================== //
 
 export default function ThemeCustomization({ children }) {
-    const theme = Palette('light', 'default');
+    const themeMtp = MtPalette('light', 'default');
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    const themeTypography = Typography(`'Public Sans', sans-serif`);
-    const themeCustomShadows = useMemo(() => CustomShadows(theme), [theme]);
+    const themeTypography = MtTypography(`'Public Sans', sans-serif`);
+
+    const themeCustomShadows = useMemo(() => MtCustomShadows(themeMtp), [themeMtp]);
 
     const themeOptions = useMemo(
         () => ({
@@ -33,17 +33,18 @@ export default function ThemeCustomization({ children }) {
             },
             direction: 'ltr',
             mixins: {
+                // LETIAN modified
                 toolbar: {
                     minHeight: 60,
                     paddingTop: 8,
                     paddingBottom: 8
                 }
             },
-            palette: theme.palette,
+            palette: themeMtp.palette,
             customShadows: themeCustomShadows,
             typography: themeTypography
         }),
-        [theme, themeTypography, themeCustomShadows]
+        [themeMtp, themeTypography, themeCustomShadows]
     );
 
     const themes = createTheme(themeOptions);

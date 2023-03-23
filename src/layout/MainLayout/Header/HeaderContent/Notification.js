@@ -78,7 +78,7 @@ const Notification = () => {
                 aria-haspopup="true"
                 onClick={handleToggle}
             >
-                <Badge badgeContent={4} color="primary">
+                <Badge badgeContent={3} color="primary">
                     <BellOutlined />
                 </Badge>
             </IconButton>
@@ -223,6 +223,7 @@ const Notification = () => {
                                                 </Typography>
                                             </ListItemSecondaryAction>
                                         </ListItemButton>
+                                        {/* 
                                         <Divider />
                                         <ListItemButton>
                                             <ListItemAvatar>
@@ -254,7 +255,8 @@ const Notification = () => {
                                                     9:10 PM
                                                 </Typography>
                                             </ListItemSecondaryAction>
-                                        </ListItemButton>
+                                        </ListItemButton> 
+                                        */}
                                         <Divider />
                                         <ListItemButton sx={{ textAlign: 'center', py: `${12}px !important` }}>
                                             <ListItemText

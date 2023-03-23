@@ -9,12 +9,14 @@ import { drawerWidth } from 'config';
 
 const AppBarStyled = styled(AppBar, { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
     zIndex: theme.zIndex.drawer + 1,
+    borderRadius: '0 0 18px 18px',
     transition: theme.transitions.create(['width', 'margin'], {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen
     }),
     ...(open && {
         marginLeft: drawerWidth,
+        borderRadius: '0 0 18px 0',
         width: `calc(100% - ${drawerWidth}px)`,
         transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,

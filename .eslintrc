@@ -4,7 +4,13 @@
         "browser": true,
         "es2021": true
     },
-    "extends": ["prettier", "plugin:react/jsx-runtime", "plugin:jsx-a11y/recommended", "plugin:react-hooks/recommended"],
+    "extends": ["prettier", 
+        //LETIAN: 
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime", 
+        "plugin:jsx-a11y/recommended", 
+        "plugin:react-hooks/recommended"
+    ],
     "settings": {
         "import/resolver": {
             "node": {
@@ -22,6 +28,8 @@
     },
     "plugins": ["prettier", "react", "react-hooks"],
     "rules": {
+        // LETIAN: suppress errors for missing 'import React' in files
+        "react/react-in-jsx-scope": "off",        
         "react/jsx-filename-extension": 0,
         "no-param-reassign": 0,
         "react/prop-types": 1,

@@ -11,12 +11,14 @@ import HeaderContent from './HeaderContent';
 // assets
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 
+// LETIAN
+import { appBarBgGradient } from 'config';
+
 // ==============================|| MAIN LAYOUT - HEADER ||============================== //
 
 const Header = ({ open, handleDrawerToggle }) => {
     const theme = useTheme();
     const matchDownMD = useMediaQuery(theme.breakpoints.down('lg'));
-
     const iconBackColor = 'grey.100';
     const iconBackColorOpen = 'grey.200';
 
@@ -28,8 +30,8 @@ const Header = ({ open, handleDrawerToggle }) => {
                 aria-label="open drawer"
                 onClick={handleDrawerToggle}
                 edge="start"
-                color="secondary"
-                sx={{ color: 'text.primary', bgcolor: open ? iconBackColorOpen : iconBackColor, ml: { xs: 0, lg: -2 } }}
+                // color="secondary"
+                sx={{ color: 'text.primary', bgcolor: open ? iconBackColorOpen : iconBackColor, ml: { xs: 0, lg: open ? -1 : 0 } }}
             >
                 {!open ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             </IconButton>
@@ -43,8 +45,10 @@ const Header = ({ open, handleDrawerToggle }) => {
         color: 'inherit',
         elevation: 0,
         sx: {
-            borderBottom: `1px solid ${theme.palette.divider}`
-            // boxShadow: theme.customShadows.z1
+            backgroundImage: appBarBgGradient(theme),
+            borderBottom: `1px solid ${theme.palette.divider}`,
+            opacity: '0.85'
+            // boxShadow: theme.customShadows.z1,
         }
     };
 

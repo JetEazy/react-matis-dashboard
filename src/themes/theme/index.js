@@ -1,6 +1,8 @@
 // ==============================|| PRESET THEME - THEME SELECTOR ||============================== //
 
 const Theme = (colors) => {
+    // colors 目前來自螞蟻 color.
+    // https://ant.design/docs/spec/colors
     const { blue, red, gold, cyan, green, grey } = colors;
     const greyColors = {
         0: grey[0],

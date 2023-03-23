@@ -12,27 +12,29 @@ import MobileSection from './MobileSection';
 
 const HeaderContent = () => {
     const matchesXs = useMediaQuery((theme) => theme.breakpoints.down('md'));
+    const showProfileIcon = false;
 
     return (
         <>
             {!matchesXs && <Search />}
             {matchesXs && <Box sx={{ width: '100%', ml: 1 }} />}
 
+            <Notification />
+
             <IconButton
                 component={Link}
-                href="https://github.com/codedthemes/mantis-free-react-admin-template"
+                href="https://github.com/lloydztw"
                 target="_blank"
                 disableRipple
                 color="secondary"
-                title="Download Free Version"
-                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                title="樂天 的 Github"
+                sx={{ color: 'text.primary', bgcolor: 'grey.100', ml: 1 }}
             >
                 <GithubOutlined />
             </IconButton>
 
-            <Notification />
-            {!matchesXs && <Profile />}
-            {matchesXs && <MobileSection />}
+            {showProfileIcon && !matchesXs && <Profile />}
+            {showProfileIcon && matchesXs && <MobileSection />}
         </>
     );
 };

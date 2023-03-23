@@ -36,7 +36,8 @@ export default function OutlinedInput(theme) {
                     }
                 },
                 inputSizeSmall: {
-                    padding: '7.5px 8px 7.5px 12px'
+                    // padding: '7.5px 8px 7.5px 12px'
+                    padding: '3px 8px 3px 12px'
                 },
                 inputMultiline: {
                     padding: 0

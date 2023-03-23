@@ -6,7 +6,7 @@ import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 // project import
-import MtPalette from './mt-palette';
+import MtMuiTheme from './mt-mui-theme';
 import MtTypography from './mt-typography';
 import MtCustomShadows from './mt-shadows';
 import componentsOverride from './overrides';
@@ -14,40 +14,45 @@ import componentsOverride from './overrides';
 // ==============================|| DEFAULT THEME - MAIN  ||============================== //
 
 export default function ThemeCustomization({ children }) {
-    const themeMtp = MtPalette('light', 'default');
-
+    // Mantis (免費版) 基於原生 mui theme 加入更多顏色:
+    //  原生 mui 'dark' theme 會被 mantis 覆寫成 light
+    //  然而使用 'dark' 才能顯示後續 mantis 的陰影效果
+    const themeRef = MtMuiTheme('dark');
+    // Mantis 所使用字型與大小
     const themeTypography = MtTypography(`'Public Sans', sans-serif`);
-
-    const themeCustomShadows = useMemo(() => MtCustomShadows(themeMtp), [themeMtp]);
-
+    // Mantis 陰影
+    const themeCustomShadows = useMemo(() => MtCustomShadows(themeRef), [themeRef]);
+    // 最後合成的 json 資料結構 用來生成 最後的 theme
     const themeOptions = useMemo(
         () => ({
-            breakpoints: {
-                values: {
-                    xs: 0,
-                    sm: 768,
-                    md: 1024,
-                    lg: 1266,
-                    xl: 1536
-                }
-            },
-            direction: 'ltr',
+            // breakpoints: {
+            //     values: {
+            //         xs: 0,
+            //         sm: 768,
+            //         md: 1024,
+            //         lg: 1266,
+            //         xl: 1536
+            //     }
+            // },
+            // direction: 'ltr',
             mixins: {
                 // LETIAN modified
                 toolbar: {
-                    minHeight: 60,
-                    paddingTop: 8,
-                    paddingBottom: 8
+                    minHeight: 50,
+                    paddingTop: 5,
+                    paddingBottom: 5
                 }
             },
-            palette: themeMtp.palette,
+            palette: themeRef.palette,
             customShadows: themeCustomShadows,
             typography: themeTypography
         }),
-        [themeMtp, themeTypography, themeCustomShadows]
+        [themeRef, themeTypography, themeCustomShadows]
     );
 
+    // 最後總成的 theme
     const themes = createTheme(themeOptions);
+    // 覆改 原生 mui components 的 css style
     themes.components = componentsOverride(themes);
 
     return (

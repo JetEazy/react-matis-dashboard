@@ -1,8 +1,9 @@
 {
-    "name": "react-matis-dashboard",
+    "name": "letian-dashboard",
     "version": "1.1.1",
     "private": true,
-    "homepage": "https://jeteazy.github.io/react-matis-dashboard",
+    "homepage-github": "https://jeteazy.github.io/react-matis-dashboard",
+    "homepage": "./",
     "dependencies": {
         "@ant-design/colors": "^6.0.0",
         "@ant-design/icons": "^4.7.0",

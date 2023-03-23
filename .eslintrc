@@ -28,8 +28,10 @@
     },
     "plugins": ["prettier", "react", "react-hooks"],
     "rules": {
-        // LETIAN: suppress errors for missing 'import React' in files
-        "react/react-in-jsx-scope": "off",        
+        // LETIAN: 關掉警告: missing 'import React' in files
+        "react/react-in-jsx-scope": "off", 
+        // LETIAN: 關掉警告: Component definition is missing display name 
+        "react/display-name": 0,       
         "react/jsx-filename-extension": 0,
         "no-param-reassign": 0,
         "react/prop-types": 1,

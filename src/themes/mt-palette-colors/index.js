@@ -1,7 +1,7 @@
 // ==============================|| PRESET THEME - THEME SELECTOR ||============================== //
 
-const Theme = (colors) => {
-    // colors 目前來自螞蟻 color.
+const MtPaletteColors = (colors) => {
+    // colors 目前 caller 會餵入 來自螞蟻的 colors.
     // https://ant.design/docs/spec/colors
     const { blue, red, gold, cyan, green, grey } = colors;
     const greyColors = {
@@ -91,4 +91,4 @@ const Theme = (colors) => {
     };
 };
 
-export default Theme;
+export default MtPaletteColors;
